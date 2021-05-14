@@ -1,3 +1,10 @@
+<!--
+ * @Author: maqq
+ * @Date: 2021-05-14 10:38:35
+ * @LastEditors: maqq
+ * @LastEditTime: 2021-05-14 11:34:39
+ * @Description: file content
+-->
 # Functional-Light JavaScript
 
 [![License: CC BY-NC-ND 4.0](https://img.shields.io/badge/License-CC%20BY--NC--ND%204.0-blue.svg)](http://creativecommons.org/licenses/by-nc-nd/4.0/)
@@ -76,3 +83,8 @@ But **PLEASE** read the [Contributions Guidelines](CONTRIBUTING.md) carefully be
 The materials herein are all (c) 2016-2018 Kyle Simpson.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.
+
+## How to convert this to a book
+```javascript
+pandoc  README.md foreword.md preface.md ch1.md ch2.md ch3.md ch4.md ch5.md ch6.md ch7.md ch8.md ch9.md ch10.md ch11.md apA.md apB.md apC.md -f markdown -t pdf --pdf-engine=xelatex -s -o Function-Light.pdf
+```
